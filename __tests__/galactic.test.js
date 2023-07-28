@@ -15,4 +15,12 @@ describe('Calculate', () => {
     expect(userAge.marsAge).toEqual(29);
     expect(userAge.jupiterAge).toEqual(4);
   });
+  test('It should determine how many years have passed since an age on each planet', () => {
+    userAge.yearsPast(userAge);
+    expect(userAge.earthAge).toEqual(56);
+    expect(userAge.mercuryAge).toEqual(233);
+    expect(userAge.venusAge).toEqual(90);
+    expect(userAge.marsAge).toEqual(29);
+    expect(userAge.jupiterAge).toEqual(4);
+  });
 });
