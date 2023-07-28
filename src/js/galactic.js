@@ -17,6 +17,11 @@ export class Calculate {
       this.jupiterNext = Math.floor((this.earthAge / 11.86) - (year2 / 11.86));
     }
     yearsNext(year2) {
-      
+      year2 = parseInt(year2);
+      this.earthTil = year2 - this.earthAge;
+      this.mercuryTil = Math.floor((year2 / 0.24) - (this.earthAge / 0.24));
+      this.venusTil = Math.floor((year2 / 0.62) - (this.earthAge / 0.62));
+      this.marsTil = Math.floor((year2 / 1.88) - (this.earthAge / 1.88));
+      this.jupiterTil = Math.floor((year2 / 11.86) - (this.earthAge / 11.86));
     }
 }
