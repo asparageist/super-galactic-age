@@ -16,4 +16,7 @@ export class Calculate {
       this.marsNext = Math.floor((this.earthAge / 1.88) - (year2 / 1.88));
       this.jupiterNext = Math.floor((this.earthAge / 11.86) - (year2 / 11.86));
     }
+    yearsNext(year2) {
+      
+    }
 }

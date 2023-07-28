@@ -23,4 +23,12 @@ describe('Calculate', () => {
     expect(userAge.marsNext).toEqual(6);
     expect(userAge.jupiterNext).toEqual(1);
   });
+  test('It should determine how many years until the next input age on each planet', () => {
+    userAge.yearsNext(61);
+    expect(userAge.earthTil).toEqual(5);
+    expect(userAge.mercuryTil).toEqual(20);
+    expect(userAge.venusTil).toEqual(8);
+    expect(userAge.marsTil).toEqual(2);
+    expect(userAge.jupiterTil).toEqual(0);
+  });
 });
