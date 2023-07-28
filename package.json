@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "galactic-age",
   "version": "1.0.0",
-  "description": "a base from which to build",
+  "description": "an app that calculates a users solar age on different planets",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",

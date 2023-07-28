@@ -20,7 +20,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'template',
+      title: 'galactic age',
       template: './src/index.html',
       inject: 'body'
     })
